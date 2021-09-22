@@ -1,0 +1,48 @@
+.Toolbar {
+  background-color: sienna;
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 90;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.Toolbar button {
+  background-color: sienna;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font: inherit;
+  height: 100%;
+  padding: 16px 10px;
+  box-sizing: border-box;
+  outline: none;
+  display: flex;
+}
+
+.Toolbar button:hover {
+  background-color: #8f5c2c;
+  border-bottom: 4px solid #40a4c8;
+}
+
+@media (max-width: 499px) {
+  .Toolbar nav {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .Toolbar button {
+    display: none;
+  }
+}
